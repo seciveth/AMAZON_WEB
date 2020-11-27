@@ -1,0 +1,19 @@
+.meme
+{
+  position: absolute;
+  top: 0;
+    left: 0;
+    right: 350px;
+    bottom: 0;
+    margin: auto;
+}
+
+.meme2
+{
+  position: absolute;
+  top: 0;
+    left: 350px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
