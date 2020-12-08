@@ -16,7 +16,6 @@ header
     height: 30px;
     background: rgba(255, 251, 251, 0.97);
     border-radius: 100px;
-    padding-left: 0px;
     top: 0;
     left: 0;
     right: 0;
@@ -31,32 +30,26 @@ input::placeholder
 
 .MainMenu
 {
-    position: absolute;
+    position: relative;
     margin: 0px;
     background: skyblue;
     transform: rotate(0.03deg);
-    width: auto;
+    width: 45px;
     height: 100%;
-}
-/*
-.MenuLista
-{
-    margin: auto;
-    width: 500px;
-    font-family: 'Times New Roman', Times, serif;
+    padding: 0px;
 }
 
-header ul, ol
+.Logo
 {
-    list-style: none;  
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: rgba(255, 251, 251, 0.97);
+    width: 100px;
+    height: 45px;  
 }
 
-.MenuLista li a
+div
 {
-    background-color: #000;
-    color: #db1212;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-    float: inherit;
+    display: inline-block;
 }

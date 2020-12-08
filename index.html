@@ -3,30 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="estilo.css">
-    <title>AmazonWeb</title>
+    <title>UP Store</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--  <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>-->
 </head>
 <body>
-    <header id="header">
-        <div><img src="icons/MainMenu.png" class="MainMenu">
-        <!--    <ul class="MenuLista">
-                <li><a href="registrarse.html">Registrarse</a></li>
-                <li><a href="">Categorias</a>
-                  <ul>
-                    <li><a href="">Electronicos</a></li>
-                    <li><a href="">Hogar</a></li>
-                    <li><a href="">Ropa</a></li>
-                    <li><a href="">Computadoras</a></li>
-                    <li><a href="">Autos</a></li>
-                  </ul>
-                </li>
-                <li><a href="">Opcion 3</a></li>
-                <li><a href="">Opcion 4</a></li>
-                <li><a href="">Opcion 5</a></li>
-                <li><a href="">Opcion 6</a></li>
-            </ul> -->
+ <div class="header">
+    <div class="container">
+     <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="./img/Logo.PNG" width="125px"></a>
         </div>
-        <input class="search_bar"  type="text/css" placeholder="Buscar Producto">
-</header>
+        <div class="carrito">
+        <a href="carrito.html"><img src="./icons/carrito.png" width="30px"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Productos</a></li>
+                <li><a href="">Acerca</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Cuenta</a></li>
+            </ul>
+        </nav>
+     </div>
+     <div class="row">
+         <div class="col-2">
+           <h1>Dale a tu vida <br>un nuevo estilo</h1>
+           <p>El exito no siempre es acerca de la grandeza.
+            Es acerca de la consistencia <br>Si trabajas arduamente se llega al exito.
+          El exito llegara.</p>
+          <a href="" class="btn">Mira ahora &#8594</a>
+         </div>
+         <div class="col-2">
+            <img src="img/ps5.PNG">
+         </div>
+     </div>
+    </div>
+ </div>
+
+ <!-- Caracteristicas -->
+
+ <div class="Categorias">
+   <div class="small-container">
+    <div class="row">
+        <div class="col-3">
+             <img src="img/ropa.jpg">
+        </div>
+      <div class="col-3">
+        <img src="img/juguetes.jpg">
+      </div>
+      <div class="col-3">
+        <img src="img/jardineria.jpg">
+      </div>
+    </div>
+   </div>
+ </div>
+
+<!-- Productos -->
+
+<div class="small-container">
+    <h2 class="titulo">Productos Destacados</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="img/yoda.png">
+            <h4>Jueguete Grogu (Baby Yoda)</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>B/60.00</p>
+        </div>
+        <div class="col-4">
+            <img src="img/Bateria.PNG" height="250px">
+            <h4>Juego de batería para niños de 14.0 in, 3 piezas</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>B/120.00</p>
+        </div>
+        <div class="col-4">
+            <img src="img/i9.PNG">
+            <h4>Procesador Intel Core i9-9900K 3.6GHz 8 núcleos 
+                unlock 10th</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>B/545.34</p>
+        </div>
+        <div class="col-4">
+            <img src="img/Auto.PNG">
+            <h4>Segway Ninebot Electric GoKart Drift</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>B/640.00</p>
+        </div>
+    </div>
+    <h2 class="titulo">Ultimos Productos</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="img/ps5.PNG">
+            <h4>Playstation 5</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>B/749.99</p>
+        </div>
+        <div class="col-4">
+            <img src="img/xbox.PNG">
+            <h4>Xbox series X</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>B/120.00</p>
+        </div>
+        <div class="col-4">
+            <img src="img/Arbolito.PNG">
+            <h4>National Tree (PEDD1–312–100) Douglas 
+                Árbol de navidad de tacto casi real</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>B/121.22</p>
+        </div>
+        <div class="col-4">
+            <img src="img/mask.PNG">
+            <h4>Mascarilla Navidad</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>B/10.00</p>
+        </div>
+        <div class="col-4">
+            <img src="img/reloj.PNG">
+            <h4>Relojes deportivos militares para hombres impermeable reloj analógico</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>B/36.99</p>
+        </div>
+        <div class="col-4">
+            <img src="img/s20.PNG">
+            <h4>Samsung Galaxy s20 ultra</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>B/799.95</p>
+        </div>
+        <div class="col-4">
+            <img src="img/piscina.PNG">
+            <h4>juego de piscina de 11.8 x 29.9 in, 
+                sobre el suelo redondo | para niños y adultos</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>B/199.95</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
