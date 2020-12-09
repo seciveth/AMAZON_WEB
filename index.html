@@ -21,7 +21,7 @@
         <a href="carrito.html"><img src="./icons/carrito.png" width="30px"></a>
         </div>
         <nav>
-            <ul>
+            <ul id="MenuItems">
                 <li><a href="">Home</a></li>
                 <li><a href="">Productos</a></li>
                 <li><a href="">Acerca</a></li>
@@ -29,6 +29,8 @@
                 <li><a href="">Cuenta</a></li>
             </ul>
         </nav>
+        <img src="img/menu.png" class="menu-icon" 
+        onclick="menutoggle()">
      </div>
      <div class="row">
          <div class="col-2">
@@ -319,10 +321,46 @@
                <div class="footer-col-1">
                    <h3>Descarga nuestra app</h3>
                    <p>App disponible para celulares Android</p>
-               </div> 
+                   <div class="playstore_logo">
+                     <img src="img/playstore.png">
+                   </div>               
+                </div>
+               <div class="footer-col-2">
+                <img src="img/Logo.png">
+                <p>Derechos Reservados</p>
+            </div> 
+            <div class="footer-col-4">
+                <h3>Siguenos</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+            </div>  
             </div>
         </div>
+        <hr>
+        <p class="Copyright">Copyright 2020 - UP Store</p>
     </div>
 </div>
+<!-- js para el menu interactivo -->
+  <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle()
+      {
+          if(MenuItems.style.maxHeight == "opx")
+          {
+            MenuItems.style.maxHeight = "200px";
+          }
+          else 
+          {
+            MenuItems.style.maxHeight = "opx";
+          }
+      }
+  </script>
 </body>
 </html>
