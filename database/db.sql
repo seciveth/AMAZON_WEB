@@ -40,9 +40,9 @@ ALTER TABLE productos
 
 
     CREATE TABLE tipo_usuarios(
-    id INT(11) NOT NULL,
-    descripcion VARCHAR (50) NOT NULL 
-
-);
-ALTER TABLE tipo_usuarios 
-    ADD FOREIGN  KEY (id);
+    id_t INT(11) NOT NULL,
+    descripcion VARCHAR (50) NOT NULL, 
+    id INT(11), 
+    PRIMARY KEY (id_t),
+    FOREIGN KEY (id) REFERENCES usuarios(id)
+    );
