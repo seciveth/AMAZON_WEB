@@ -37,3 +37,12 @@ ALTER TABLE productos
 ALTER TABLE productos
     MODIFY id INT(11) 
     NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
+
+
+    CREATE TABLE tipo_usuarios(
+    id INT(11) NOT NULL,
+    descripcion VARCHAR (50) NOT NULL 
+
+);
+ALTER TABLE tipo_usuarios 
+    ADD FOREIGN  KEY (id);
