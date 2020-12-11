@@ -3,12 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="registro.css">
-    <title>Registrarse</title>
+    <title>Login/Registro</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--   <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>-->
+    <link rel="shortcut icon" href="./img/Shorcut.png" type="image/x-icon">
 </head>
 <body>
-    <a href="index.html">Regresar</a>
-    <img src="img/meme.jpg" class="meme">
-    <img src="img/meme2.jpg" class="meme2">
+ 
+    <div class="container">
+     <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="./img/Logo.PNG" width="125px"></a>
+        </div>
+        <div class="carrito">
+        <a href="carrito.html"><img src="./icons/carrito.png" width="30px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="">Home</a></li>
+                <li><a href="">Productos</a></li>
+                <li><a href="">Acerca</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Cuenta</a></li>
+            </ul>
+        </nav>
+        <img src="img/menu.png" class="menu-icon" 
+        onclick="menutoggle()">
+     </div>
+    </div>
+
+    <!--Pagina de la cuenta-->
+<div class="pagina-cuenta">
+    <div class="row">
+      <div class="col-2">  
+        <img src="img/ps5.PNG" width="70%">
+    </div>
+    <div class="col-2">
+        <div class="form-container">
+            <div class="form-btn">
+                <span>Iniciar Sesion</span>
+                <span>Registrar</span>
+                <hr id="indicador">
+            </div>
+            <form id="loginform">
+                <input type="text" placeholder="Usuario">
+                <input type="password" placeholder="Contraseña">
+                <button type="submit" class="btn">Iniciar Sesion</button>
+                <a href="">Olvide la contraseña</a>
+            </form>
+            <form id="Registroform">
+                <input type="text" placeholder="Usuario">
+                <input type="email" placeholder="Correo electronico">
+                <button type="submit" class="btn">Registrarse</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+    <!--Footer-->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+               <div class="footer-col-1">
+                   <h3>Descarga nuestra app</h3>
+                   <p>App disponible para celulares Android</p>
+                   <div class="playstore_logo">
+                     <img src="img/playstore.png">
+                   </div>               
+                </div>
+               <div class="footer-col-2">
+                <img src="img/Logo.png">
+                <p>Derechos Reservados</p>
+            </div> 
+            <div class="footer-col-4">
+                <h3>Siguenos</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+            </div>  
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2020 - UP Store</p>
+    </div>
+
+<!-- js para el menu interactivo -->
+  <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle()
+      {
+          if(MenuItems.style.maxHeight == "opx")
+          {
+            MenuItems.style.maxHeight = "200px";
+          }
+          else 
+          {
+            MenuItems.style.maxHeight = "opx";
+          }
+      }
+  </script>
 </body>
 </html>
