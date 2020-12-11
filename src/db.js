@@ -12,7 +12,7 @@ pool.getConnection((err, conn) => {
         if (err.code == 'ER_CON_COUNT_ERROR'){
             console.error('LA BASE DE DATOS TIENE MUCHAS CONEXIONES');
         }
-        if (err.code == 'ECNNREFUSED'){
+        if (err.code == 'ECONNREFUSED'){
             console.error('LA CONEXION DE LA BASE DE DATOS FUE RECHAZADA');
         }
     }
@@ -20,7 +20,7 @@ pool.getConnection((err, conn) => {
     console.log('BASE DE DATOS CONECTADA');
     return;
 });
-
+//promesa
 pool.query = promisify(pool.query);
 
 module.exports = pool;

@@ -3,27 +3,28 @@ const router = express.Router();
 
 const pool = require('../db');
 
-router.get('/add', (req, res) =>{
-    const articulo = pool.query('SELECT * FROM productos');
+router.get('/add', async (req , res) =>{
+    //consulta para ver si hay productos en la base datos
+    const articulo = await pool.query('SELECT * FROM productos'); 
     res.render('partials/index', { articulo });  //Renderiza ah esta ubicacion
 });
 
-router.post('/addarticulo', async (req, res) =>{
+router.post('/addarticulo', async (req , res) =>{
 
-    //
+    
     const { nombre, img, categoria, descripcion} = req.body;
     const newArticulo = {
         nombre,
         img,
         categoria,
-        descripcion
+        descripcion,
     };
     console.log(newArticulo);
     await pool.query('INSERT INTO productos set ?', [newArticulo]);
-    res.redirect('/Glowplay/add');
+    res.redirect('/Gowplay/add');
 });
 
-router.get('/delete/:id', async (req, res) => {
+router.get('/delete/:id', async (req , res) => {
 
     const { id } = req.params;
    await pool.query('DELETE FROM productos WHERE id = ?', [id]);
@@ -48,11 +49,11 @@ router.post('/edit/:id', async (req, res) =>{
         nombre,
         img,
         categoria,
-        descripcion
+        descripcion,
     };
-    console.log(newArticulo);
-    await pool.query('UPDATE productos set ? WHERE id =?' , [newArticulo, id]);
-    res.redirect('/Glowplay/add');
+    
+    await pool.query('UPDATE productos set ? WHERE id = ?' , [newArticulo, id]);
+    res.redirect('/Gowplay/add');
 });
 
 

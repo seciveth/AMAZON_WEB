@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const path = require('path');
 
 const { database } = require('./keys');
-
+//iinicializacion
 const app = express();
 
 //settings
@@ -15,7 +15,7 @@ app.engine('.hbs', exhbs({
     defaultLayout: 'main',
     layoutsDir: path.join(app.get('views'), 'layouts'),
     partialsDir: path.join(app.get('views'), 'partials'),
-    extname: '.hbs'
+    extname: '.hbs',
 }));
 app.set('view engine', '.hbs');
 
@@ -24,7 +24,7 @@ app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
 
 //routes
-app.use('/Gowplay', require('./routes/crud'));
+app.use('/GowPlay', require('./routes/crud'));
 
 //public
 app.use(express.static(path.join(__dirname, 'public')));
@@ -33,5 +33,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //inicio del servidor
 app.listen(app.get('port'), () => {
-    console.log('servidor en puerto: ', app.get('port'))
+    console.log('servidor en puerto: ', app.get('port'));
 }); 
