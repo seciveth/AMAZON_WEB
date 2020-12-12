@@ -380,6 +380,7 @@ ul
         background: #333;
         width: 100%;
         transition: max-height 0.5s;
+        overflow: hidden;
     }
 
     nav ul li

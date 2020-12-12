@@ -22,11 +22,11 @@
         </div>
         <nav>
             <ul id="MenuItems">
-                <li><a href="">Home</a></li>
-                <li><a href="">Productos</a></li>
-                <li><a href="">Acerca</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="src/views/partials/index.hbs">Productos</a></li>
+                <li><a href="#go-footer">Acerca</a></li>
                 <li><a href="">Contacto</a></li>
-                <li><a href="">Cuenta</a></li>
+                <li><a href="registrarse.html">Cuenta</a></li>
             </ul>
         </nav>
         <img src="img/menu.png" class="menu-icon" 
@@ -314,7 +314,7 @@
     </div>
 
     <!--Footer-->
-
+    <div id="go-footer">
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -343,22 +343,23 @@
         <hr>
         <p class="Copyright">Copyright 2020 - UP Store</p>
     </div>
+  </div>
 </div>
 <!-- js para el menu interactivo -->
   <script>
       var MenuItems = document.getElementById("MenuItems");
 
-      MenuItems.style.maxHeight = "0px";
+      MenuItems.estilos.maxHeight = "0px";
 
       function menutoggle()
       {
-          if(MenuItems.style.maxHeight == "opx")
+          if(MenuItems.estilos.maxHeight == "opx")
           {
-            MenuItems.style.maxHeight = "200px";
+            MenuItems.estilos.maxHeight = "200px";
           }
           else 
           {
-            MenuItems.style.maxHeight = "opx";
+            MenuItems.estilos.maxHeight = "opx";
           }
       }
   </script>
