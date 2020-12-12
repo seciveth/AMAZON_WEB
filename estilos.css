@@ -72,7 +72,7 @@ p
 .col-2 img
 {
     max-width: 85%;
-    padding: 61px 0;
+    padding: 60px 0;
 }
 
 .col-2 h1
@@ -103,6 +103,10 @@ p
     background: radial-gradient(#fff,#8bc3e9);
 }
 
+.small-header
+{
+    background: radial-gradient(#fff,#8bc3e9);
+}
 .Categorias
 {
     margin: 20px 0;
@@ -335,7 +339,7 @@ ul
 
 .playstore_logo
 {
-    margin-top: 20px;  
+    margin-top: 5px;  
 }
 
 .playstore_logo img
@@ -388,7 +392,7 @@ ul
 
     nav ul li a
     {
-       color: #000; 
+       color: #fff; 
     }
 
     .menu-icon
@@ -400,10 +404,9 @@ ul
 
 /*Pagina de Registro*/
 
-.pagina-cuenta
+.account-page
 {
     padding: 50px 0;
-    background: radial-gradient(#fff,#8bc3e9);
 }
 
 .form-container
@@ -421,7 +424,7 @@ ul
 .form-container span
 {
     font-weight: bold;
-    padding: 0 10px;
+    padding: 1 10px;
     color: #555;
     cursor: pointer;
     width: 100px;
@@ -430,7 +433,7 @@ ul
 
 .form-btn
 {
-    display: inline-block;
+  display: inline-block;
 }
 
 .form-container form
@@ -463,22 +466,12 @@ form .btn:focus
     outline: none;
 }
 
-#loginform
-{
-    left: -300px;
-}
-
-#Registroform
-{
-    left: 0;
-}
-
 form a
 {
     font-size: 12px;
 }
 
-#indicador
+#Indicator
 {
   width: 100px;
   border: none;
@@ -486,4 +479,19 @@ form a
   height: 3px;
   margin-top: 8px;
   transform: translateX(100px);
+}
+
+#Indicator2
+{
+  width: 100px;
+  border: none;
+  background: #ff523b;
+  height: 3px;
+  margin-top: 8px;
+  transform: translateX(0px);
+}
+
+#RegForm
+{
+    margin-top: -50px;
 }

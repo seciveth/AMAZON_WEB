@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrarse</title>
+    <title>Login</title>
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <link href="https//fonts.googleapis.com/css2? family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="./img/Shorcut.png" type="image/x-icon">
 </head>
 <body>
- <div class="header">
+<div class="header">
     <div class="container">
      <div class="navbar">
         <div class="logo">
@@ -35,7 +35,7 @@
         onclick="menutoggle()">
      </div>
     </div>
- 
+
     <!--Pagina de la cuenta-->
 <div class="account-page">
   <div class="container">  
@@ -46,17 +46,15 @@
     <div class="col-2">
         <div class="form-container">
             <div class="form-btn">
-                <a href="Login.html"><span ">Iniciar Sesion</span></a>
-                <span onclick="register()">Registrarse</span>
-                <hr id="Indicator">
+                <span onclick="login()">Iniciar Sesion</span>
+               <a href="registrarse.html"><span>Registrarse</span></a>
+                <hr id="Indicator2">
             </div>
-            <form id="RegForm">
+            <form id="LoginForm">
                 <input type="text" placeholder="Username">
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Apellido">
-                <input type="email" placeholder="Email">
-                <input type="email" placeholder="Contraseña">
-                <button type="submit" class="btn">Registrarse</button>
+                <input type="password" placeholder="contraseña">
+                <button type="submit" class="btn">Iniciar Sesion</button>
+                <a href="">Olvide la contraseña</a>
             </form>
         </div>
     </div>
@@ -64,6 +62,7 @@
   </div>
  </div>
 </div>
+
     <!--Footer-->
 
     <div class="footer">
